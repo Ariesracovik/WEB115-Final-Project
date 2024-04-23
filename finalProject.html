@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="projectCSS.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="projectJS.js" defer></script>
+</head>
+<body>
+    <h1>Build Your Meal Plan</h1>
+    <form id="mealPlanForm">
+        <h4>Nathan Brozovsky : WEB-115 : 0004</h4>
+        
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email (required):</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="goal">Your Goal for the Week:</label><br>
+        <textarea id="goal" name="goal" rows="2"></textarea><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Breakfast</th>
+                    <th>Snack</th>
+                    <th>Lunch</th>
+                    <th>Second Snack</th>
+                    <th>Dinner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td><textarea id="mondayBreakfast" name="mondayBreakfast" rows="2"></textarea></td>
+                    <td><textarea id="mondaySnack" name="mondaySnack" rows="2"></textarea></td>
+                    <td><textarea id="mondayLunch" name="mondayLunch" rows="2"></textarea></td>
+                    <td><textarea id="mondaySecondSnack" name="mondaySecondSnack" rows="2"></textarea></td>
+                    <td><textarea id="mondayDinner" name="mondayDinner" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td><textarea id="tuesdayBreakfast" name="tuesdayBreakfast" rows="2"></textarea></td>
+                    <td><textarea id="tuesdaySnack" name="tuesdaySnack" rows="2"></textarea></td>
+                    <td><textarea id="tuesdayLunch" name="tuesdayLunch" rows="2"></textarea></td>
+                    <td><textarea id="tuesdaySecondSnack" name="tuesdaySecondSnack" rows="2"></textarea></td>
+                    <td><textarea id="tuesdayDinner" name="tuesdayDinner" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td><textarea id="wednesdayBreakfast" name="wednesdayBreakfast" rows="2"></textarea></td>
+                    <td><textarea id="wednesdaySnack" name="wednesdaySnack" rows="2"></textarea></td>
+                    <td><textarea id="wednesdayLunch" name="wednesdayLunch" rows="2"></textarea></td>
+                    <td><textarea id="wednesdaySecondSnack" name="wednesdaySecondSnack" rows="2"></textarea></td>
+                    <td><textarea id="wednesdayDinner" name="wednesdayDinner" rows="2"></textarea></td>
+                </tr>
+                <!-- When finalized, Repeat the above structure for Thursday, Friday, Saturday, and Sunday -->
+            </tbody>
+        </table>
+
+        <input type="button" id="createPlanButton" value="Create Meal Plan">
+    </form>
+</body>
+</html>
