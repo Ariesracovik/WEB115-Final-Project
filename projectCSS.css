@@ -4,9 +4,35 @@ table {
 }
 th, td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #c9e265;
     text-align: left;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: #2aa92e61;
 }
+
+header {
+    background-color: #e5ffc0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #e5ffc0;
+}
+
+textarea, #name, #email {
+    background-color: rgba(255, 228, 196, 0.327);
+}
+
+h2 {
+    font-family: "Nova Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+  
